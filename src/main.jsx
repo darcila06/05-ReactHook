@@ -1,5 +1,5 @@
-import ReactDOM from 'react-dom/client'
-import './index.css'
+import ReactDOM from "react-dom/client";
+import "./index.css";
 // import { CounterWithCustomHook } from './01-useState/CounterWithCustomHook'
 // import { SimpleForm } from './02-useEffect/SimpleForm'
 // import { MultipleCustomHook } from './03-examples/MultipleCustomHook'
@@ -13,10 +13,16 @@ import './index.css'
 // import { CallbackHook } from './06-Memos/CallbackHook'
 // import { Padre } from './07-tarea-memo/Padre'
 // import './08-useReducer/intro-reducer'
-import { TodoApp } from './08-useReducer/TodoApp'
+// import { TodoApp } from './08-useReducer/TodoApp'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  // <React.StrictMode>
-    <TodoApp/>
-  // </React.StrictMode>,
-)
+import { MainApp } from "./09-UseContext/MainApp";
+import { BrowserRouter } from "react-router-dom";
+import React from "react";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+    <React.StrictMode>
+      <MainApp />
+    </React.StrictMode>
+  </BrowserRouter>
+);
